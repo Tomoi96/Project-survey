@@ -10,12 +10,12 @@
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
         <fieldset>
-            <label for="name">Name <input name="name" id="name" type="text" placeholder="Enter your name" required /></label>
-            <label for="email">E-mail <input name="email" id="email" type="email" placeholder="Enter your Email" required /></label>
-            <label for="number">Age <span class="optional">(Optional)</span><input name="number" id="number" placeholder="Age" type="number" /></label>
+            <label for="name">Name <input name="name" id="name" class="form-control" type="text" placeholder="Enter your name" required /></label>
+            <label for="email">E-mail <input name="email" id="email" class="form-control" type="email" placeholder="Enter your Email" required /></label>
+            <label for="number">Age <span class="optional">(Optional)</span><input name="number" id="number" class="form-control" placeholder="Age" type="number" min="13" max="120" /></label>
             <label for="option1">Which option best describes your current role?
-              <select name="option" id="option">
-                <option value="">(select one)</option>
+              <select name="option" id="option" class="form-control">
+                <option value="">Select your current role</option>
                 <option value="1">Student</option>
                 <option value="2">Full Time job</option>
                 <option value="3">Full Time Learner</option>
@@ -32,7 +32,7 @@
           </fieldset>
           <fieldset>
             <label for="referrer">What is your favorite feature of this project?
-              <select name="referrer" id="referrer">
+              <select name="referrer" id="referrer" class="form-control">
                 <option value="">select an option</option>
                 <option value="1">Challenges</option>
                 <option value="2">Explanations</option>
